@@ -285,6 +285,8 @@ Same stress test (OCCT CPU + RAM, default settings), same LLC 4:
 
 Cinebench R23 gives a second, like-for-like voltage comparison: Vcore **1.252 V** at Auto (161 W, 68 °C, taken before the ring and undervolt changes; the capture is an OCCT monitoring window, `occt-auto-cinebench-load.jpg`, and that it was recorded during Cinebench comes from my chat log, not from the screenshot itself) versus **1.172 V** at AC 0.20 (163 W, 70 °C max), so **about −80 mV**. Two caveats: the ring was also raised from 36 to 39 between the two runs, and power and temperature under Cinebench did **not** go down (the 48× all-core ratio sets the load either way), so the watt and degree savings are only seen in the OCCT numbers above, which have the method issues described. The score at AC 0.20 is **22 753** (PL 190 W, SA 1.25 V, ring 39, C3, tREFI 32767 / tRFC 560). I have **no** Cinebench score from Auto settings, so I can't say what the undervolt did to the score (see [section 13](#13-results)). A too-aggressive undervolt can lower the score through "clock stretching" while the reported frequency looks normal, which is exactly why a before/after Cinebench comparison is needed.
 
+**Re-measured on the final configuration (2026-11-13, one method).** I logged a full run with a script ([tools/measure.ps1](tools/measure.ps1)): 5 minutes idle, then Cinebench R23 multi-core for 10 minutes, every sensor read once per second, load averages taken after the first 60 seconds, FanControl running as in daily use, and HWiNFO logging alongside for Vcore. Result at AC 0.20, final memory timings (tREFI 49151 / tRFC 530): Vcore **1.173 V** average (HWiNFO), core VID 1.224 V, package **162 W** average (168 W max), package **66 °C average, 69 °C max**, no thermal throttling and no PL1 limit hit, score **22 721**. That matches the earlier screenshots (1.172 V, 163 W, 70 °C, 22 753). The files are in [measurements/](measurements/README.md). The Auto side has **not** been re-measured this way yet.
+
 Empirically, each 0.05 step of AC_LL is worth about **10 mV** under full load on this setup.
 
 ### Testing an undervolt properly
@@ -395,16 +397,18 @@ Disabling **core parking** wasn't necessary: on a desktop with the Balanced plan
 | | Auto (ASUS) | Final |
 |---|---|---|
 | Vcore, OCCT CPU + RAM (same test, same LLC; average vs instantaneous reading, see [section 10](#the-measurements)) | ~1.231 V | 1.181 V (about −50 mV) |
-| Vcore, Cinebench R23 | 1.252 V | 1.172 V (about −80 mV; ring also raised 36 → 39 in between) |
-| Package power / max temperature, Cinebench R23 | 161 W / 68 °C | 163 W / 70 °C (no drop under this load) |
+| Vcore, Cinebench R23 | 1.252 V | 1.172 V (about −80 mV; ring also raised 36 → 39 in between). Re-measured 2026-11-13: 1.173 V average over 9 minutes |
+| Package power / max temperature, Cinebench R23 | 161 W / 68 °C | 163 W / 70 °C (no drop under this load). Re-measured 2026-11-13: 162 W average / 69 °C max |
 | Package power, OCCT CPU + RAM | ~129 W avg | ~117 W *(indicative, see [section 10](#the-measurements))* |
 | CPU temperature, same test | ~55 °C avg | ~49 °C *(indicative)* |
-| Cinebench R23 multi-core | **TODO (Auto baseline)** | 22 753 |
+| Cinebench R23 multi-core | **TODO (Auto baseline)** | 22 753; re-measured 2026-11-13 on the final timings: 22 721 |
 | Power limits | None | **190 W** |
 | SA voltage | 1.377 to 1.393 V | **1.25 V** |
-| Idle package power / temperature | **TODO** | **TODO** |
+| Idle package power / temperature | **TODO** | 17 W / 28 °C average over 5 minutes (2026-11-13) |
 
-About the multi-core score: I have not measured the Auto baseline, so I can't claim "no performance lost". The 190 W cap alone should cost something like 5 % in all-core loads *(estimate)*, and I don't have a trustworthy reference score to compare 22 753 against.
+About the multi-core score: I have not measured the Auto baseline, so I can't claim "no performance lost". The 190 W cap alone should cost something like 5 % in all-core loads *(estimate)*, and I don't have a trustworthy reference score to compare 22 753 against. The two final-configuration scores (22 753 and 22 721, about 0.1 % apart) show the run-to-run spread and no sign of clock stretching between the two memory steps.
+
+About the idle figure: it is a desktop idle with my usual background apps open (not a clean boot), so it varies (11 to 48 W within the 5 minutes). It has **no Auto counterpart** yet, so it does not show what C3, ASPM off and EPP 0 cost. DIMMs stayed at 33 to 35 °C during this run, idle and under Cinebench (a CPU load, not a memory or gaming load).
 
 ### Memory (AIDA64)
 
@@ -467,7 +471,7 @@ In practice: with a **256-sample audio buffer**, this is comfortably safe. At 12
 - [ ] Full-length TM5 (anta777 Extreme) or OCCT Memory on the final timings (48 min of TM5 done, profile not recorded).
 - [x] MSI mode enabled on GPU, USB and sound card: checked in the registry on 2026-11-13.
 - [ ] Re-log the Auto / 0.60 / 0.20 table (voltage, power, temperature) with one method and one time window.
-- [ ] Idle package power and temperature, before and after (C3, ASPM off, EPP 0).
+- [ ] Idle package power and temperature, before and after (C3, ASPM off, EPP 0). The "after" is measured (17 W / 28 °C, 2026-11-13); the Auto run with the same script is still to do.
 - [ ] LatencyMon: baseline and final with the same duration and the same scenario.
 - [ ] Re-test memory stability in worst-case room temperature (summer), watching DIMM temperatures; back off tREFI if errors appear.
 - [ ] Check DIMM temperatures during a 1 to 2 hour gaming session (target: under 48 to 50 °C).
@@ -490,6 +494,7 @@ In practice: with a **256-sample audio buffer**, this is comfortably safe. At 12
 | Tool | Used for |
 |---|---|
 | **HWiNFO64** | Sensors, active memory timings, ring clock |
+| **LibreHardwareMonitorLib** + [tools/measure.ps1](tools/measure.ps1) | Scripted idle + Cinebench logging, one method for every run. Its motherboard "Vcore" reads about 0.12 V low on this board, so Vcore comes from HWiNFO |
 | **OCCT** | CPU, memory and combined stress tests, with WHEA error monitoring |
 | **TM5** (anta777 Extreme profile) | Memory stability, more sensitive to refresh-timing errors |
 | **Cinebench R23** | Heavy all-core load, score as a sanity check |

@@ -48,6 +48,12 @@ Photos of the BIOS are phone photos of the monitor. Screenshots show the Windows
 | [interrupt-affinity-after.jpg](interrupt-affinity-after.jpg) | After pinning: RTX 5080 on CPU 4, USB 3.20 xHCI on CPU 8, Sound Blaster on CPU 6, the rest Default or SpreadMessages |
 | [latencymon-drivers-tab.jpg](latencymon-drivers-tab.jpg) | LatencyMon "Drivers" tab (per-driver DPC/ISR); **not** the summary page |
 
+## Final configuration (2026-11-13)
+
+| File | What it shows |
+|---|---|
+| [hwinfo-summary-final.jpg](hwinfo-summary-final.jpg) | HWiNFO system summary on the final settings: BIOS 1805, DDR4 at 3600 MT/s 18-19-19-39 2T, tRC 58, tRFC 530; ring 39× |
+
 ## Things to check before using these as proof
 
 - **The two Auto rows of the undervolt table come from different sources.** The OCCT "Auto" row (~129 W, ~55 °C, Vcore 1.231 V) is the *average* of a ~1 h run (the two `hwinfo-1h-avg-*` files), while the 0.60 and 0.20 rows are *instantaneous* mid-run readings. The same averages (128.96 W, 55.48 °C) also appear in the AC 0.20 heavy-load capture, which has min 12 W, so idle is included there. I can't tell whether that is a coincidence. The voltage difference (about −50 mV) is the robust part; re-measure power and temperature with one method.
@@ -63,4 +69,4 @@ Photos of the BIOS are phone photos of the monitor. Screenshots show the Windows
 - TM5 / anta777 runs (the 48 minutes) and OCCT Memory runs.
 - DIMM temperatures at the final tRFC 530 / tREFI 49151 timings. The 42 °C figure comes from the earlier 560 / 32767 step (OCCT captures show 33 to 38 °C at that time; a 44 °C peak appears in my logs).
 - CoreCycler, Geekbench, 3DMark.
-- A final-configuration set: BIOS photos of the final values, idle and load monitoring, memory timings, a Cinebench R23 run, with both Auto and AC 0.20 measured with the same method.
+- A complete final-configuration set. Done on 2026-11-13: the HWiNFO summary above, and an idle + Cinebench R23 run logged by script (in [measurements/](../measurements/README.md), as logs rather than screenshots). Still missing: BIOS photos of the final values, and the same scripted run at Auto settings.

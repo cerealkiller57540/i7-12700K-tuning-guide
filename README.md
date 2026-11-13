@@ -19,7 +19,7 @@ PC feels snappier in everyday use (subjective). What the measurements say:
 | What | Before | After | Confidence |
 |---|---|---|---|
 | Load voltage, OCCT CPU + RAM | ~1.231 V (1 h average) | 1.181 V (instantaneous), about −50 mV | Good: same test and settings, but average vs instantaneous reading ([evidence](evidence/README.md)) |
-| Load voltage, Cinebench R23 | 1.252 V | 1.172 V, about −80 mV | Good: same test; ring also raised 36 → 39 in between |
+| Load voltage, Cinebench R23 | 1.252 V | 1.172 V, about −80 mV | Good: same test; ring also raised 36 → 39 in between. Final side re-measured over 9 min on 2026-11-13: 1.173 V ([measurements](measurements/README.md)) |
 | Package power, OCCT CPU + RAM | ~129 W (average) | ~117 W (instantaneous) | Indicative: methods not matched. Under Cinebench it did not change (161 W → 163 W) |
 | CPU temperature, OCCT CPU + RAM | ~55 °C (average) | ~49 °C (instantaneous) | Indicative: methods not matched. Under Cinebench: 68 °C → 70 °C max |
 | Memory controller (SA) voltage | 1.38 to 1.39 V | **1.25 V** | Solid |
@@ -28,8 +28,8 @@ PC feels snappier in everyday use (subjective). What the measurements say:
 | Power limits | None (4095 W) | **190 W** | Setting |
 | Avg latency, interrupt → DPC (LatencyMon) | 12.4 µs | 4.4 µs | **Indicative only**: runs of 50 s vs 3 h, several changes at once; the baseline already had C3 and ASPM-off |
 | Avg latency, interrupt → process (LatencyMon) | 30.2 µs | 19.2 µs | **Indicative only**: same caveat |
-| Multi-core score (Cinebench R23) | **TODO (Auto baseline)** | 22 753 | The 190 W cap should cost about 5 % *(estimate)* |
-| Idle power / temperature | **TODO** | **TODO** | Expect a cost from C3, ASPM off, EPP 0 |
+| Multi-core score (Cinebench R23) | **TODO (Auto baseline)** | 22 753, then 22 721 on the final timings | The 190 W cap should cost about 5 % *(estimate)* |
+| Idle power / temperature | **TODO** | 17 W / 28 °C (5 min average) | No Auto counterpart yet; expect a cost from C3, ASPM off, EPP 0 |
 
 ### Things to know before you copy anything
 
@@ -46,6 +46,8 @@ PC feels snappier in everyday use (subjective). What the measurements say:
 |---|---|
 | [GUIDE.md](GUIDE.md) | The full step-by-step method, final BIOS and Windows settings, measurements, mistakes, to-do list |
 | [evidence/](evidence/) | 22 screenshots and BIOS photos from the tuning process (Auto BIOS, OCCT, HWiNFO, AIDA64, memory timings, interrupt affinity). They are **step captures, not final-configuration proof**, and the folder README lists what was never captured (Cinebench R23, LatencyMon summary, TM5) |
+| [measurements/](measurements/README.md) | Scripted runs on the final configuration (idle + Cinebench R23, per-second sensor logs, HWiNFO log, summaries) |
+| [tools/](tools/measure.ps1) | `measure.ps1`, the PowerShell script that produced them (LibreHardwareMonitorLib, run as administrator) |
 | [LICENSE.md](LICENSE.md) | CC BY 4.0 |
 
 *Spotted a mistake, or have numbers from a similar setup? Please open an issue.*

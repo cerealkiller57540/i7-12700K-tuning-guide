@@ -1,0 +1,39 @@
+Label: ac020   Date: 2026-11-13 14:47   Idle 300 s, load mean excludes first 60 s
+
+== idle ==
+12th Gen Intel Core i7-12700K / Clock / Bus Speed                      mean   100,267  min   100,266  max   100,269  n=237
+12th Gen Intel Core i7-12700K / Clock / P-Core #1                      mean 2 241,825  min   401,066  max 5 113,592  n=237
+12th Gen Intel Core i7-12700K / Power / CPU Cores                      mean     4,595  min     1,521  max    58,927  n=237
+12th Gen Intel Core i7-12700K / Power / CPU Package                    mean    14,392  min    10,698  max    70,699  n=237
+12th Gen Intel Core i7-12700K / Power / CPU Platform                   mean     0,000  min     0,000  max     0,000  n=237
+12th Gen Intel Core i7-12700K / Temperature / Core Max                 mean    26,008  min    21,000  max    43,000  n=237
+12th Gen Intel Core i7-12700K / Temperature / CPU Package              mean    27,291  min    24,000  max    40,000  n=237
+12th Gen Intel Core i7-12700K / Temperature / P-Core #1                mean    21,245  min    18,000  max    38,000  n=237
+12th Gen Intel Core i7-12700K / Voltage / CPU Core                     mean     0,979  min     0,714  max     1,248  n=237
+12th Gen Intel Core i7-12700K / Voltage / P-Core #1                    mean     0,854  min     0,714  max     1,253  n=237
+Corsair - CMT32GX4M4C3600C18 (#0) / Temperature / DIMM #0              mean    33,599  min    33,500  max    33,750  n=237
+Corsair - CMT32GX4M4C3600C18 (#1) / Temperature / DIMM #1              mean    33,747  min    33,500  max    33,750  n=237
+Corsair - CMT32GX4M4C3600C18 (#2) / Temperature / DIMM #2              mean    33,250  min    33,250  max    33,250  n=237
+Corsair - CMT32GX4M4C3600C18 (#3) / Temperature / DIMM #3              mean    31,775  min    31,750  max    32,000  n=237
+Nuvoton NCT6798D / Temperature / CPU Core                              mean    26,975  min    25,000  max    40,500  n=237
+Nuvoton NCT6798D / Voltage / Vcore                                     mean     0,734  min     0,640  max     1,136  n=237
+
+== load ==
+12th Gen Intel Core i7-12700K / Clock / Bus Speed                      mean   100,267  min   100,266  max   100,267  n=455
+12th Gen Intel Core i7-12700K / Clock / P-Core #1                      mean 4 812,793  min 4 812,792  max 4 812,794  n=455
+12th Gen Intel Core i7-12700K / Power / CPU Cores                      mean   153,200  min    86,827  max   158,264  n=455
+12th Gen Intel Core i7-12700K / Power / CPU Package                    mean   163,768  min    97,618  max   168,954  n=455
+12th Gen Intel Core i7-12700K / Power / CPU Platform                   mean     0,000  min     0,000  max     0,000  n=455
+12th Gen Intel Core i7-12700K / Temperature / Core Max                 mean    72,644  min    50,000  max    78,000  n=455
+12th Gen Intel Core i7-12700K / Temperature / CPU Package              mean    72,591  min    46,000  max    78,000  n=455
+12th Gen Intel Core i7-12700K / Temperature / P-Core #1                mean    67,360  min    38,000  max    73,000  n=455
+12th Gen Intel Core i7-12700K / Voltage / CPU Core                     mean     1,232  min     1,206  max     1,252  n=455
+12th Gen Intel Core i7-12700K / Voltage / P-Core #1                    mean     1,232  min     1,202  max     1,271  n=455
+Corsair - CMT32GX4M4C3600C18 (#0) / Temperature / DIMM #0              mean    35,087  min    33,750  max    36,750  n=455
+Corsair - CMT32GX4M4C3600C18 (#1) / Temperature / DIMM #1              mean    34,814  min    33,750  max    36,250  n=455
+Corsair - CMT32GX4M4C3600C18 (#2) / Temperature / DIMM #2              mean    34,152  min    33,250  max    35,500  n=455
+Corsair - CMT32GX4M4C3600C18 (#3) / Temperature / DIMM #3              mean    32,831  min    31,750  max    34,000  n=455
+Nuvoton NCT6798D / Temperature / CPU Core                              mean    72,723  min    51,500  max    76,500  n=455
+Nuvoton NCT6798D / Voltage / Vcore                                     mean     1,063  min     1,048  max     1,136  n=455
+
+Cinebench R23 multi-core: 22811.06

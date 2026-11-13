@@ -1,0 +1,170 @@
+Application start      : 11/13/26 at 14:37:16
+Executable             : 64 Bit
+Version / Build        : 23.200 / RBBenchmark330542
+Debugger               : not available
+Memory model           : release
+Startup path           : file:///C:/Users/<user>/Downloads/CinebenchR23
+Application path       : file:///C:/Users/<user>/Downloads/CinebenchR23/Cinebench.exe
+Application executable : file:///C:/Users/<user>/Downloads/CinebenchR23/Cinebench.exe
+Resource path          : file:///C:/Users/<user>/Downloads/CinebenchR23/resource
+Module path(s)         : file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs; file:///C:/Users/<user>/Downloads/CinebenchR23/plugins; file:///C:/Users/<user>/AppData/Roaming/Maxon/CinebenchR23_01152F12/plugins
+Temporary path         : file:///C:/Users/<user>/AppData/Local/Temp
+Prefs path             : file:///C:/Users/<user>/AppData/Roaming/Maxon/CinebenchR23_01152F12
+Global Prefs path      : file:///C:/Users/<user>/AppData/Roaming/Maxon
+OS version             : Windows 10, 64 Bit, Core (build 26200)
+OS languages           : {fr-FR,en-US}
+App languages          : {en-US}
+Startup language       : en-US
+Processor              : 12(20)x 12th Gen Intel Core i7-12700K
+Computer name          : <computer>
+Unique OS identifier   : mJiaZeGs3j2SW_PGoooilO64EsAWAaZlbdSAaeTVY8c= [tpm]
+Thread Count           : 20
+CPU Speed (MHz)        : 3610.000
+Application Type       : Modular
+Command line arguments : "g_CinebenchCpuXTest=true" "g_CinebenchMinimumTestDuration=600" 
+
+Module path file:///C:/Users/<user>/Downloads/CinebenchR23/plugins couldn't be found
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/asset.module.xdl64 with module(s) net.maxon.asset
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/c4d_viewport_nodegraph.module.xdl64 with module(s) net.maxon.c4d_viewport_nodegraph
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/c4dplugin.xdl64 with module(s) net.maxon.rlmlicensing net.maxon.c4d.c4dplugin
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/command.module.xdl64 with module(s) net.maxon.command
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/corenodes.module.xdl64 with module(s) net.maxon.corenodes
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/crashhandler.module.xdl64 with module(s) net.maxon.crashhandler
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/crypt.module.xdl64 with module(s) net.maxon.crypt
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/drawport.module.xdl64 with module(s) net.maxon.drawport
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/drawport_functioncache.module.xdl64 with module(s) net.maxon.drawport_functioncache
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/drawport_general.module.xdl64 with module(s) net.maxon.drawport_general
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/drawport_opengl.module.xdl64 with module(s) net.maxon.drawport_opengl
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/drawport_selector.module.xdl64 with module(s) net.maxon.drawport_selector
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/embree.module.xdl64 with module(s) net.maxon.embree
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/geom.module.xdl64 with module(s) net.maxon.geom
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/geometry_abstraction.module.xdl64 with module(s) net.maxon.geometry_abstraction
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/gui.module.xdl64 with module(s) net.maxon.gui
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/image.module.xdl64 with module(s) net.maxon.image
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/image_winmf.module.xdl64 with module(s) net.maxon.image_winmf
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/licensing.module.xdl64 with module(s) net.maxon.licensing
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/math.module.xdl64 with module(s) net.maxon.math
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/mesh.module.xdl64 with module(s) net.maxon.mesh
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/misc.module.xdl64 with module(s) net.maxon.misc
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/mvp_base_presenter.module.xdl64 with module(s) net.maxon.mvp_base_presenter
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/mvp_base_view.module.xdl64 with module(s) net.maxon.mvp_base_view
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/mvp_desktop2d_nodegraph_widgets.module.xdl64 with module(s) net.maxon.mvp_desktop2d_nodegraph_widgets
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/mvp_desktop2d_widgets.module.xdl64 with module(s) net.maxon.mvp_desktop2d_widgets
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/mvp_nodegraph_presenters.module.xdl64 with module(s) net.maxon.mvp_nodegraph_presenters
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/mvp_nodes_presenters.module.xdl64 with module(s) net.maxon.mvp_nodes_presenters
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/network.module.xdl64 with module(s) net.maxon.network
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/neutron.module.xdl64 with module(s) net.maxon.neutron
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/nodes.module.xdl64 with module(s) net.maxon.nodes
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/nodes_corenodes.module.xdl64 with module(s) net.maxon.nodes_corenodes
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/opensubdiv.module.xdl64 with module(s) net.maxon.opensubdiv
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/render.module.xdl64 with module(s) net.maxon.render
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/retargetbase.module.xdl64 with module(s) net.maxon.retargetbase
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/shaderbase.module.xdl64 with module(s) net.maxon.shaderbase
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/shadernodes.module.xdl64 with module(s) net.maxon.shadernodes
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/svg.module.xdl64 with module(s) net.maxon.svg
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/tessellation.module.xdl64 with module(s) net.maxon.tessellation
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/advanced_render.xdl64 with module(s) net.maxon.c4d.advanced_render
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/c4d_viewport_render.xdl64 with module(s) net.maxon.c4d.c4d_viewport_render
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/ca.xdl64 with module(s) net.maxon.c4d.ca
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/ca2.xdl64 with module(s) net.maxon.c4d.ca2
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/cinebench.xdl64 with module(s) net.maxon.c4d.cinebench
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/clothilde.xdl64 with module(s) net.maxon.c4d.clothilde
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/colorchoosergui.xdl64 with module(s) net.maxon.c4d.colorchoosergui
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/compositing.xdl64 with module(s) net.maxon.c4d.compositing
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/exchanges.xdl64 with module(s) net.maxon.c4d.exchanges
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/expressiontag.xdl64 with module(s) net.maxon.c4d.expressiontag
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/hair.xdl64 with module(s) net.maxon.c4d.hair
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/interop.xdl64 with module(s) net.maxon.c4d.interop
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/mkmodeler.xdl64 with module(s) net.maxon.c4d.mkmodeler
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/mocca.xdl64 with module(s) net.maxon.c4d.mocca
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/model.xdl64 with module(s) net.maxon.c4d.model
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/mograph.xdl64 with module(s) net.maxon.c4d.mograph
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/nbo.xdl64 with module(s) net.maxon.c4d.nbo
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/nbp.xdl64 with module(s) net.maxon.c4d.nbp
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/newman.xdl64 with module(s) net.maxon.c4d.newman
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/nodeeditor.xdl64 with module(s) net.maxon.c4d.nodeeditor
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/objects.xdl64 with module(s) net.maxon.c4d.objects
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/shader.xdl64 with module(s) net.maxon.c4d.shader
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/sky.xdl64 with module(s) net.maxon.c4d.sky
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/sla.xdl64 with module(s) net.maxon.c4d.sla
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/xpressocore.xdl64 with module(s) net.maxon.c4d.xpressocore
+Loading file:///C:/Users/<user>/Downloads/CinebenchR23/corelibs/xtensions.xdl64 with module(s) net.maxon.c4d.xtensions
+CINEBENCH started
+Drawport API initialized
+    Framework        : OpenGL
+    Vendor           : NVIDIA Corporation (NVIDIA)
+    Renderer         : NVIDIA GeForce RTX 5080/PCIe/SSE2
+    Framework version: 4.6.0 NVIDIA 621.01
+    Driver version   : 621.01
+CINEBENCH AUTORUN
+Please wait until all tests are done!
+
+Running Multiple CPU Render Test...
+Minimum test duration: 600000.0 ms seconds.
+Rendering...
+Values: {21431.468} -> Avg/Deviation: 21431.468/0.000
+Rendering...
+Values: {21431.468,22999.548} -> Avg/Deviation: 22215.508/784.040
+Rendering...
+Values: {21431.468,22999.548,22920.512} -> Avg/Deviation: 22450.509/721.293
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345} -> Avg/Deviation: 22574.968/660.809
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548} -> Avg/Deviation: 22660.284/615.183
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549} -> Avg/Deviation: 22718.495/576.470
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706} -> Avg/Deviation: 22739.525/536.187
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459} -> Avg/Deviation: 22706.892/508.935
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459,22349.968} -> Avg/Deviation: 22667.234/492.765
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459,22349.968,22973.585} -> Avg/Deviation: 22697.869/476.426
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459,22349.968,22973.585,22952.326} -> Avg/Deviation: 22721.001/460.107
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459,22349.968,22973.585,22952.326,22987.558} -> Avg/Deviation: 22743.214/446.637
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459,22349.968,22973.585,22952.326,22987.558,22997.549} -> Avg/Deviation: 22762.778/434.434
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459,22349.968,22973.585,22952.326,22987.558,22997.549,22943.701} -> Avg/Deviation: 22775.702/421.216
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459,22349.968,22973.585,22952.326,22987.558,22997.549,22943.701,22939.060} -> Avg/Deviation: 22786.592/408.968
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459,22349.968,22973.585,22952.326,22987.558,22997.549,22943.701,22939.060,22874.273} -> Avg/Deviation: 22792.072/396.550
+Rendering...
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459,22349.968,22973.585,22952.326,22987.558,22997.549,22943.701,22939.060,22874.273,22973.585} -> Avg/Deviation: 22802.749/387.074
+Rendering...
+Finalizing for 379.8 ms
+Finalizing for 1408.7 ms
+Finalizing for 2423.6 ms
+Finalizing for 3434.7 ms
+Finalizing for 4449.2 ms
+Finalizing for 5479.8 ms
+Finalizing for 6494.1 ms
+Finalizing for 7511.8 ms
+Finalizing for 8541.7 ms
+Finalizing for 9556.3 ms
+Finalizing for 10571.2 ms
+Finalizing for 11584.1 ms
+Finalizing for 12598.0 ms
+Finalizing for 13611.4 ms
+Finalizing for 14622.9 ms
+Finalizing for 15637.0 ms
+Finalizing for 16652.8 ms
+Finalizing for 17664.6 ms
+Finalizing for 18677.8 ms
+Finalizing for 19696.3 ms
+Finalizing for 20714.9 ms
+Finalizing for 21726.5 ms
+Finalizing for 22741.3 ms
+Finalizing for 23770.7 ms
+Finalizing for 24787.0 ms
+Finalizing for 25803.4 ms
+Finalizing for 26816.2 ms
+Finalizing for 27829.9 ms
+Finalizing for 28847.2 ms
+Values: {21431.468,22999.548,22920.512,22948.345,23001.548,23009.549,22865.706,22478.459,22349.968,22973.585,22952.326,22987.558,22997.549,22943.701,22939.060,22874.273,22973.585,22952.326} -> Avg/Deviation: 22811.059/377.725
+CB 22811.06 (0.00)
+ 
